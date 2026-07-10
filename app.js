@@ -1,11 +1,10 @@
 const CONFIG = {
-  // Cambia estos datos por los reales del cliente.
-  // WhatsApp debe ir con lada país. México: 52 + número. Ejemplo: "5255653194281".
-  whatsappNumber: "525500000000",
-  email: "contacto@mapromec.com",
-  facebook: "https://www.facebook.com/",
-  instagram: "https://www.instagram.com/",
-  tiktok: "https://www.tiktok.com/@",
+  // WhatsApp debe ir sin +, sin espacios y con lada país.
+  // +52 5610836288 => "525610836288"
+  whatsappNumber: "525610836288",
+  email: "contacto@mapromec.com.mx",
+  facebook: "https://www.facebook.com/share/1BUKyNgdzM/?mibextid=wwXlfr",
+  instagram: "https://www.instagram.com/mapormec?igsh=MWdrNTVvODZteWNieg%3D%3D&utm_source=qr",
 };
 
 const defaultMessage =
@@ -16,7 +15,6 @@ const galleryImages = [
   "images/gallery-02.jpeg",
   "images/gallery-03.jpeg",
   "images/gallery-04.jpeg",
-  "images/gallery-05.jpeg",
   "images/gallery-06.jpeg",
   "images/gallery-07.jpeg",
   "images/gallery-08.jpeg",
@@ -40,6 +38,13 @@ function getWhatsAppLink(message = defaultMessage) {
   return `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
 
+function getGmailLink() {
+  const subject = "Solicitud de cotización MAPROMEC";
+  const body = "Hola MAPROMEC, me interesa solicitar una cotización.";
+
+  return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(CONFIG.email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
 function setupContactLinks() {
   const whatsappLinks = [
     "#topWhatsApp",
@@ -51,6 +56,7 @@ function setupContactLinks() {
 
   whatsappLinks.forEach((selector) => {
     const element = $(selector);
+
     if (element) {
       element.href = getWhatsAppLink();
       element.target = "_blank";
@@ -59,10 +65,14 @@ function setupContactLinks() {
   });
 
   const emailLinks = ["#topEmail", "#contactEmail"];
+
   emailLinks.forEach((selector) => {
     const element = $(selector);
+
     if (element) {
-      element.href = `mailto:${CONFIG.email}`;
+      element.href = getGmailLink();
+      element.target = "_blank";
+      element.rel = "noopener noreferrer";
     }
   });
 
@@ -71,12 +81,11 @@ function setupContactLinks() {
     "#floatFacebook": CONFIG.facebook,
     "#contactInstagram": CONFIG.instagram,
     "#floatInstagram": CONFIG.instagram,
-    "#contactTikTok": CONFIG.tiktok,
-    "#floatTikTok": CONFIG.tiktok,
   };
 
   Object.entries(socialMap).forEach(([selector, url]) => {
     const element = $(selector);
+
     if (element) {
       element.href = url;
       element.target = "_blank";
@@ -124,6 +133,7 @@ function setupRevealAnimations() {
 
 function renderGallery() {
   const galleryGrid = $("#galleryGrid");
+
   if (!galleryGrid) return;
 
   galleryImages.forEach((src, index) => {
@@ -178,17 +188,22 @@ function setupLightbox() {
 
   if (lightbox) {
     lightbox.addEventListener("click", (event) => {
-      if (event.target === lightbox) closeLightbox();
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
     });
   }
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeLightbox();
+    if (event.key === "Escape") {
+      closeLightbox();
+    }
   });
 }
 
 function setupQuoteForm() {
   const form = $("#quoteForm");
+
   if (!form) return;
 
   form.addEventListener("submit", (event) => {
@@ -216,13 +231,18 @@ Detalles: ${details || "Pendiente de enviar foto / medidas / plano."}
 
 function duplicateStripText() {
   const stripTrack = document.querySelector(".strip-track");
+
   if (!stripTrack) return;
+
   stripTrack.innerHTML += stripTrack.innerHTML;
 }
 
 function setCurrentYear() {
   const year = $("#year");
-  if (year) year.textContent = new Date().getFullYear();
+
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
