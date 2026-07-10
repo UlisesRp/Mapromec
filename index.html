@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>MAPROMEC | Maquinados y piezas especiales</title>
+  <meta name="description" content="MAPROMEC: taller metalmecánico especializado en torno, maquinados, piezas especiales, bujes, rodillos, ejes y producción sobre muestra o plano." />
+  <meta name="theme-color" content="#061a4d" />
+
+  <meta property="og:title" content="MAPROMEC | Maquinados y piezas especiales" />
+  <meta property="og:description" content="Fabricación de piezas especiales, torno, bujes, rodillos y producción por lote." />
+  <meta property="og:image" content="images/logo.jpeg" />
+
+  <link rel="preload" href="images/gallery-19.jpeg" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path d="M12 2.5c5.25 0 9.5 4.1 9.5 9.15 0 5.06-4.25 9.15-9.5 9.15-1.64 0-3.25-.41-4.66-1.17L2.5 21l1.42-4.36a8.9 8.9 0 0 1-1.42-4.99C2.5 6.6 6.75 2.5 12 2.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M9.27 7.95c-.24 0-.47.1-.63.28l-.72.82a1.26 1.26 0 0 0-.28 1.26c.56 1.67 1.56 3.2 2.94 4.46 1.37 1.24 3 2.13 4.75 2.58.44.12.91-.02 1.22-.35l.74-.79c.21-.22.3-.53.23-.83l-.26-1.16a.85.85 0 0 0-.58-.63l-1.56-.48a.86.86 0 0 0-.83.18l-.74.59a.43.43 0 0 1-.42.08 7.47 7.47 0 0 1-3.44-3.19.41.41 0 0 1 .05-.45l.57-.73a.86.86 0 0 0 .15-.83l-.54-1.52a.85.85 0 0 0-.65-.55l-1.18-.22h-.1Z"/>
+    </symbol>
+
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+      <path d="M14.25 8.35V6.9c0-.7.46-.86.78-.86h2V2.7l-2.76-.02c-3.07 0-3.76 2.3-3.76 3.77v1.9H8.07v3.48h2.44v8.9h3.74v-8.9h2.92l.38-3.48h-3.3Z"/>
+    </symbol>
+
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <path d="M7.8 2.75h8.4A5.06 5.06 0 0 1 21.25 7.8v8.4a5.06 5.06 0 0 1-5.05 5.05H7.8a5.06 5.06 0 0 1-5.05-5.05V7.8A5.06 5.06 0 0 1 7.8 2.75Zm0 1.85a3.2 3.2 0 0 0-3.2 3.2v8.4a3.2 3.2 0 0 0 3.2 3.2h8.4a3.2 3.2 0 0 0 3.2-3.2V7.8a3.2 3.2 0 0 0-3.2-3.2H7.8Zm4.2 3.17a4.23 4.23 0 1 1 0 8.46 4.23 4.23 0 0 1 0-8.46Zm0 1.85a2.38 2.38 0 1 0 0 4.76 2.38 2.38 0 0 0 0-4.76Zm4.45-2.35a1.02 1.02 0 1 1 0 2.04 1.02 1.02 0 0 1 0-2.04Z"/>
+    </symbol>
+
+    <symbol id="icon-tiktok" viewBox="0 0 24 24">
+      <path d="M15.8 2.75c.32 2.55 1.76 4.05 4.2 4.21v3.13a7.43 7.43 0 0 1-4.15-1.25v6.33c0 3.22-2.17 6.08-5.77 6.08-3.16 0-5.58-2.16-5.58-5.2 0-3.38 2.75-5.54 6.48-5.28v3.22c-1.54-.24-3.04.47-3.04 1.94 0 1.13.91 1.9 2.04 1.9 1.32 0 2.24-.82 2.24-2.74V2.75h3.58Z"/>
+    </symbol>
+
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <path d="M4.25 5.75h15.5A2.25 2.25 0 0 1 22 8v8a2.25 2.25 0 0 1-2.25 2.25H4.25A2.25 2.25 0 0 1 2 16V8a2.25 2.25 0 0 1 2.25-2.25Zm.2 2 7.55 5.14 7.55-5.14H4.45Zm15.55 8.1V9.27l-7.47 5.09a.94.94 0 0 1-1.06 0L4 9.27v6.58c0 .3.2.55.45.55h15.1c.25 0 .45-.25.45-.55Z"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="inicio">
+    <div class="topbar">
+      <p>Maquinados de precisión · Piezas especiales · Producción por lote</p>
+      <div class="topbar-links">
+        <a href="#" id="topEmail" class="topbar-icon-link"><svg class="social-icon" aria-hidden="true"><use href="#icon-mail"></use></svg><span>Correo</span></a>
+        <a href="#" id="topWhatsApp" class="topbar-icon-link"><svg class="social-icon social-icon-whatsapp" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span>WhatsApp</span></a>
+      </div>
+    </div>
+
+    <nav class="navbar" aria-label="Navegación principal">
+      <a href="#inicio" class="brand" aria-label="MAPROMEC inicio">
+        <img src="images/logo.jpeg" alt="Logo MAPROMEC" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#empresa">Empresa</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto" class="nav-cta">Cotizar</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content reveal">
+        <span class="eyebrow">Industria metalmecánica</span>
+        <h1>Maquinados, torno y fabricación de piezas especiales.</h1>
+        <p>
+          Soluciones para empresas que necesitan piezas resistentes, precisas y fabricadas
+          bajo muestra, plano o requerimiento técnico.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary btn-with-icon" id="heroWhatsApp"><svg class="social-icon social-icon-whatsapp" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span>Cotizar por WhatsApp</span></a>
+          <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
+        </div>
+
+        <div class="hero-badges" aria-label="Especialidades">
+          <span>Torneado</span>
+          <span>Bujes</span>
+          <span>Rodillos</span>
+          <span>Ejes</span>
+          <span>Piezas especiales</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <img src="images/gallery-01.jpeg" alt="Piezas metálicas maquinadas por MAPROMEC" />
+        </div>
+        <div class="floating-card">
+          <strong>Trabajo sobre medida</strong>
+          <span>Fabricación por muestra, plano o necesidad técnica</span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="strip" aria-label="Especialidades MAPROMEC">
+      <div class="strip-track">
+        <span>TORNEADO</span>
+        <span>MAQUILA</span>
+        <span>PIEZAS ESPECIALES</span>
+        <span>RODILLOS</span>
+        <span>BUJES</span>
+        <span>EJES</span>
+        <span>PRODUCCIÓN POR LOTE</span>
+        <span>METALMECÁNICA</span>
+      </div>
+    </section>
+
+    <section class="section about" id="empresa">
+      <div class="section-grid">
+        <div class="section-copy reveal">
+          <span class="eyebrow">MAPROMEC</span>
+          <h2>Fabricación industrial con enfoque en precisión y resistencia.</h2>
+          <p>
+            En MAPROMEC desarrollamos piezas metálicas para maquinaria, procesos industriales
+            y necesidades específicas de producción. Trabajamos con atención al detalle,
+            revisión de medidas y fabricación funcional.
+          </p>
+          <p>
+            Nuestro objetivo es entregar piezas útiles, durables y listas para integrarse
+            al trabajo diario de cada cliente.
+          </p>
+        </div>
+
+        <div class="about-panel reveal">
+          <div class="about-item">
+            <span>01</span>
+            <div>
+              <h3>Sobre muestra</h3>
+              <p>Recreamos piezas tomando como base el componente físico.</p>
+            </div>
+          </div>
+
+          <div class="about-item">
+            <span>02</span>
+            <div>
+              <h3>Sobre plano</h3>
+              <p>Fabricación de acuerdo con medidas y especificaciones técnicas.</p>
+            </div>
+          </div>
+
+          <div class="about-item">
+            <span>03</span>
+            <div>
+              <h3>Por lote</h3>
+              <p>Producción de piezas repetitivas para operación o inventario.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicios">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Servicios</span>
+        <h2>Soluciones para taller, industria y mantenimiento.</h2>
+        <p>
+          Servicios pensados para empresas que requieren piezas funcionales, refacciones
+          especiales o componentes fabricados a la medida.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <span class="service-number">01</span>
+          <h3>Torneado</h3>
+          <p>Maquinado de piezas cilíndricas, bujes, ejes, separadores, rodillos y componentes especiales.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-number">02</span>
+          <h3>Fabricación de piezas especiales</h3>
+          <p>Desarrollo de piezas bajo muestra, plano o necesidad específica del cliente.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-number">03</span>
+          <h3>Rodillos y bujes</h3>
+          <p>Fabricación y ajuste de componentes para maquinaria, sistemas de carga, movimiento o producción.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-number">04</span>
+          <h3>Producción por lote</h3>
+          <p>Maquila de piezas repetitivas para pedidos pequeños, medianos o recurrentes.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-number">05</span>
+          <h3>Mantenimiento de componentes</h3>
+          <p>Apoyo en reparación, reposición o mejora de piezas desgastadas por uso industrial.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-number">06</span>
+          <h3>Asesoría técnica</h3>
+          <p>Revisión de requerimientos para definir material, medidas, acabado y funcionalidad.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section process" id="proceso">
+      <div class="process-image reveal">
+        <img src="images/gallery-05.jpeg" alt="Proceso de torno y maquinado MAPROMEC" />
+      </div>
+
+      <div class="process-copy reveal">
+        <span class="eyebrow">Proceso de trabajo</span>
+        <h2>De la muestra a la pieza terminada.</h2>
+
+        <div class="steps">
+          <div class="step">
+            <span>1</span>
+            <div>
+              <h3>Revisión</h3>
+              <p>Analizamos muestra, plano, medidas o necesidad del cliente.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span>2</span>
+            <div>
+              <h3>Cotización</h3>
+              <p>Definimos alcance, cantidad, material y tiempo estimado de entrega.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span>3</span>
+            <div>
+              <h3>Fabricación</h3>
+              <p>Realizamos el maquinado y ajuste de acuerdo con el requerimiento.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span>4</span>
+            <div>
+              <h3>Entrega</h3>
+              <p>Se entrega la pieza terminada para instalación, prueba o uso industrial.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Galería</span>
+        <h2>Trabajo real, piezas reales.</h2>
+        <p>
+          Una muestra del tipo de piezas, acabados y componentes fabricados en taller.
+        </p>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <section class="cta-section reveal">
+      <div>
+        <span class="eyebrow">Cotización rápida</span>
+        <h2>¿Necesitas una pieza especial?</h2>
+        <p>
+          Envía una foto, plano, medidas o muestra. MAPROMEC revisa tu requerimiento
+          y prepara una cotización.
+        </p>
+      </div>
+      <a href="#" class="btn btn-primary btn-with-icon" id="ctaWhatsApp"><svg class="social-icon social-icon-whatsapp" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span>Enviar mensaje</span></a>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="contact-copy reveal">
+        <span class="eyebrow">Contacto</span>
+        <h2>Cotiza tu proyecto con MAPROMEC.</h2>
+        <p>
+          Completa los datos y se abrirá WhatsApp con un mensaje listo para enviar.
+        </p>
+
+        <div class="contact-buttons">
+          <a href="#" id="contactWhatsApp" class="social-link social-link-whatsapp"><svg class="social-icon social-icon-whatsapp" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span>WhatsApp</span></a>
+          <a href="#" id="contactFacebook" class="social-link social-link-facebook"><svg class="social-icon" aria-hidden="true"><use href="#icon-facebook"></use></svg><span>Facebook</span></a>
+          <a href="#" id="contactInstagram" class="social-link social-link-instagram"><svg class="social-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg><span>Instagram</span></a>
+          <a href="#" id="contactTikTok" class="social-link social-link-tiktok"><svg class="social-icon" aria-hidden="true"><use href="#icon-tiktok"></use></svg><span>TikTok</span></a>
+          <a href="#" id="contactEmail" class="social-link social-link-mail"><svg class="social-icon" aria-hidden="true"><use href="#icon-mail"></use></svg><span>Correo</span></a>
+        </div>
+      </div>
+
+      <form class="quote-form reveal" id="quoteForm">
+        <label>
+          Nombre
+          <input type="text" id="name" placeholder="Tu nombre" required />
+        </label>
+
+        <label>
+          Teléfono
+          <input type="tel" id="phone" placeholder="Tu teléfono" />
+        </label>
+
+        <label>
+          Servicio de interés
+          <select id="service" required>
+            <option value="">Selecciona una opción</option>
+            <option value="Torneado">Torneado</option>
+            <option value="Fabricación de pieza especial">Fabricación de pieza especial</option>
+            <option value="Bujes o rodillos">Bujes o rodillos</option>
+            <option value="Producción por lote">Producción por lote</option>
+            <option value="Mantenimiento de componente">Mantenimiento de componente</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </label>
+
+        <label>
+          Detalles
+          <textarea id="details" rows="5" placeholder="Describe la pieza, cantidad, medidas o material..."></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-with-icon"><svg class="social-icon social-icon-whatsapp" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span>Enviar cotización por WhatsApp</span></button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <img src="images/logo.jpeg" alt="Logo MAPROMEC" />
+      <p>Maquinados · Torno · Piezas especiales · Industria metalmecánica</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+
+    <p class="copyright">
+      © <span id="year"></span> MAPROMEC. Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <div class="floating-social" aria-label="Redes sociales">
+    <a href="#" id="floatWhatsApp" aria-label="WhatsApp" class="float-link float-whatsapp"><svg class="social-icon social-icon-whatsapp" aria-hidden="true"><use href="#icon-whatsapp"></use></svg></a>
+    <a href="#" id="floatFacebook" aria-label="Facebook" class="float-link float-facebook"><svg class="social-icon" aria-hidden="true"><use href="#icon-facebook"></use></svg></a>
+    <a href="#" id="floatInstagram" aria-label="Instagram" class="float-link float-instagram"><svg class="social-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
+    <a href="#" id="floatTikTok" aria-label="TikTok" class="float-link float-tiktok"><svg class="social-icon" aria-hidden="true"><use href="#icon-tiktok"></use></svg></a>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button id="closeLightbox" aria-label="Cerrar imagen">×</button>
+    <img src="" alt="Imagen MAPROMEC" id="lightboxImage" />
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
