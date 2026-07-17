@@ -4,7 +4,7 @@ const CONFIG = {
   whatsappNumber: "525610836288",
   email: "contacto@mapromec.com.mx",
   facebook: "https://www.facebook.com/share/1BUKyNgdzM/?mibextid=wwXlfr",
-  instagram: "https://www.instagram.com/mapormec?igsh=MWdrNTVvODZteWNieg%3D%3D&utm_source=qr",
+  instagram: "https://www.instagram.com/mapormec/",
 };
 
 const defaultMessage =
@@ -41,7 +41,6 @@ function getWhatsAppLink(message = defaultMessage) {
 function getGmailLink() {
   const subject = "Solicitud de cotización MAPROMEC";
   const body = "Hola MAPROMEC, me interesa solicitar una cotización.";
-
   return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(CONFIG.email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 

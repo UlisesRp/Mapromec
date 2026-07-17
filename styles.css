@@ -935,12 +935,6 @@ select {
   color: #ffffff;
 }
 
-.contact-buttons a.social-link-tiktok:hover {
-  background: #050505;
-  border-color: rgba(255, 255, 255, 0.18);
-  color: #ffffff;
-}
-
 .contact-buttons a.social-link-mail:hover {
   background: #dfe6ef;
   border-color: #dfe6ef;
@@ -971,7 +965,3 @@ select {
   color: #ffffff;
 }
 
-.floating-social a.float-tiktok:hover {
-  background: #050505;
-  color: #ffffff;
-}
