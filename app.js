@@ -4,7 +4,7 @@ const CONFIG = {
   whatsappNumber: "525610836288",
   email: "contacto@mapromec.com.mx",
   facebook: "https://www.facebook.com/share/1BUKyNgdzM/?mibextid=wwXlfr",
-  instagram: "https://www.instagram.com/mapormec/",
+  instagram: "https://www.instagram.com/mapromec/",
 };
 
 const defaultMessage =
